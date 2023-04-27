@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button" class="btn">click</button>
+    <h1 class="hi"></h1>
+    <script>
+        const button= document.querySelector('.btn');
+        const head= document.querySelector('.hi');
+        button.addEventListener('mousemove',()=>{
+            button.innerHTML="hello";
+        })
+        button.addEventListener('mouseout',()=>{
+            button.innerHTML="click";
+        })
+        button.addEventListener('click',()=>{
+            head.innerHTML="hello world";
+        })
+    </script>
+</body>
+</html>
